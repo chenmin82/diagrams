@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-27T07:42:47.747Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="1O0tcrslqf9avGhPzBdi" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-29T03:28:13.689Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="f7jnwRlbjb1rIO6OBwAP" version="17.4.6" type="github">
   <diagram id="2a6nDW4Tioe9Vvq5x9DU" name="RPL">
-    <mxGraphModel dx="2249" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1633" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -139,10 +139,10 @@
         <mxCell id="pkojq78bwt03LpZ_PUWG-112" value="RPL[0][63]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
           <mxGeometry x="-200" y="440" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="kEfI_zAbcwiESx79Z_Fe-5" value="16" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="kEfI_zAbcwiESx79Z_Fe-5" value="N" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="-200" y="240" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="kEfI_zAbcwiESx79Z_Fe-6" value="1-bit entry type:&lt;br&gt;0 - STRP&lt;br&gt;1 - LTRP" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="kEfI_zAbcwiESx79Z_Fe-6" value="1-bit type for entry N:&lt;br&gt;0 - STRP&lt;br&gt;1 - LTRP" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-140" y="240" width="130" height="50" as="geometry" />
         </mxCell>
       </root>
