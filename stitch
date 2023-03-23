@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-23T02:49:36.371Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="reVaYy1tVJAMu284eqrY" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-23T02:53:31.319Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="KqUUwLFBczrWhixF1-1e" version="21.0.6" type="github">
   <diagram name="第 1 页" id="UMybJwPPQqwSbGloREL4">
     <mxGraphModel dx="818" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -135,7 +135,7 @@
         <mxCell id="i9-v8885JaH8XeHn-1Mb-2" value="padding bytes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;direction=west;horizontal=0;" vertex="1" parent="1">
           <mxGeometry x="720" y="181" width="20" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="i9-v8885JaH8XeHn-1Mb-7" value="&lt;h1&gt;Example&lt;/h1&gt;&lt;div&gt;We stitch &lt;b&gt;16 1920x1080&lt;/b&gt;&amp;nbsp;8-bit streams into one &lt;b&gt;3840x2160 NV12&lt;/b&gt; picture (base address &lt;i&gt;BA&lt;/i&gt;), with each subpicture of &lt;b&gt;960x540&lt;/b&gt; and stride as &lt;b&gt;4096 &lt;/b&gt;bytes:&lt;/div&gt;&lt;p&gt;- sw_ppx_out_y_stride = 4096&lt;/p&gt;&lt;p&gt;- sw_ppx_out_c_stride = 4096&lt;br&gt;&lt;/p&gt;&lt;p&gt;- sw_ppx_crop_startx = 0&lt;/p&gt;&lt;p&gt;- sw_ppx_crop_starty = 0&lt;br&gt;&lt;/p&gt;&lt;p&gt;- sw_ppx_in_width = 1920&lt;/p&gt;&lt;p&gt;- sw_ppx_in_height = 1080&lt;/p&gt;&lt;p&gt;- sw_ppx_out_width = 960&lt;/p&gt;&lt;p&gt;- sw_ppx_out_height = 540&lt;/p&gt;&lt;p&gt;- sw_ppx_pad_e = 0&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="i9-v8885JaH8XeHn-1Mb-7" value="&lt;h1&gt;Example&lt;/h1&gt;&lt;div&gt;We stitch &lt;b&gt;16 1920x1080&lt;/b&gt;&amp;nbsp;8-bit streams into one &lt;b&gt;3840x2160 NV12&lt;/b&gt; picture (base address &lt;i&gt;BA_LU/BA_CH&lt;/i&gt;), with each subpicture of &lt;b&gt;960x540&lt;/b&gt; and stride as &lt;b&gt;4096 &lt;/b&gt;bytes:&lt;/div&gt;&lt;p&gt;- sw_ppx_out_y_stride = 4096&lt;/p&gt;&lt;p&gt;- sw_ppx_out_c_stride = 4096&lt;br&gt;&lt;/p&gt;&lt;p&gt;- sw_ppx_crop_startx = 0&lt;/p&gt;&lt;p&gt;- sw_ppx_crop_starty = 0&lt;br&gt;&lt;/p&gt;&lt;p&gt;- sw_ppx_in_width = 1920&lt;/p&gt;&lt;p&gt;- sw_ppx_in_height = 1080&lt;/p&gt;&lt;p&gt;- sw_ppx_out_width = 960&lt;/p&gt;&lt;p&gt;- sw_ppx_out_height = 540&lt;/p&gt;&lt;p&gt;- sw_ppx_pad_e = 0&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="320" y="711" width="380" height="329" as="geometry" />
         </mxCell>
         <mxCell id="i9-v8885JaH8XeHn-1Mb-55" value="" style="childLayout=tableLayout;recursiveResize=0;shadow=0;fillColor=none;" vertex="1" parent="1">
@@ -167,12 +167,12 @@
             <mxRectangle width="80" height="28" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="i9-v8885JaH8XeHn-1Mb-62" value="BA_LUMA" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-60">
+        <mxCell id="i9-v8885JaH8XeHn-1Mb-62" value="BA_LU" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-60">
           <mxGeometry x="80" width="130" height="28" as="geometry">
             <mxRectangle width="130" height="28" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="i9-v8885JaH8XeHn-1Mb-63" value="BA_CHROMA" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-60">
+        <mxCell id="i9-v8885JaH8XeHn-1Mb-63" value="BA_CH" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-60">
           <mxGeometry x="210" width="130" height="28" as="geometry">
             <mxRectangle width="130" height="28" as="alternateBounds" />
           </mxGeometry>
@@ -185,12 +185,12 @@
             <mxRectangle width="80" height="31" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="i9-v8885JaH8XeHn-1Mb-66" value="BA_LUMA+960" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-64">
+        <mxCell id="i9-v8885JaH8XeHn-1Mb-66" value="BA_LU+960" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-64">
           <mxGeometry x="80" width="130" height="31" as="geometry">
             <mxRectangle width="130" height="31" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="i9-v8885JaH8XeHn-1Mb-67" value="BA_CHROMA+960" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-64">
+        <mxCell id="i9-v8885JaH8XeHn-1Mb-67" value="BA_CH+960" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-64">
           <mxGeometry x="210" width="130" height="31" as="geometry">
             <mxRectangle width="130" height="31" as="alternateBounds" />
           </mxGeometry>
@@ -203,12 +203,12 @@
             <mxRectangle width="80" height="31" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="i9-v8885JaH8XeHn-1Mb-70" value="BA_LUMA+540*4096" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-68">
+        <mxCell id="i9-v8885JaH8XeHn-1Mb-70" value="BA_LU+540*4096" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-68">
           <mxGeometry x="80" width="130" height="31" as="geometry">
             <mxRectangle width="130" height="31" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="i9-v8885JaH8XeHn-1Mb-71" value="BA_LUMA+270*4096" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-68">
+        <mxCell id="i9-v8885JaH8XeHn-1Mb-71" value="BA_CH+270*4096" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=left;whiteSpace=wrap;html=1;" vertex="1" parent="i9-v8885JaH8XeHn-1Mb-68">
           <mxGeometry x="210" width="130" height="31" as="geometry">
             <mxRectangle width="130" height="31" as="alternateBounds" />
           </mxGeometry>
