@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-20T13:37:23.317Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="x5ciJE_KNqvmYLSgEiIw" version="21.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-20T13:41:14.068Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="PzN2NSLBb55qSokTqE1e" version="21.3.6" type="github">
   <diagram name="第 1 页" id="ysJos9gQEDwbxLNxAihh">
     <mxGraphModel dx="504" dy="234" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -32,16 +32,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="7qr4-UeMCU4mv5dYFZJK-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="260" width="160" height="20" as="geometry" />
+          <mxGeometry x="200" y="290" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="7qr4-UeMCU4mv5dYFZJK-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="260" width="80" height="20" as="geometry" />
+          <mxGeometry x="360" y="290" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="7qr4-UeMCU4mv5dYFZJK-10" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.8_point_star" vertex="1" parent="1">
-          <mxGeometry x="350" y="230" width="20" height="20" as="geometry" />
+          <mxGeometry x="350" y="260" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="7qr4-UeMCU4mv5dYFZJK-11" value="Steam error immediately after decodign started.&lt;br&gt;No data consumed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="370" y="225" width="259" height="30" as="geometry" />
+        <mxCell id="7qr4-UeMCU4mv5dYFZJK-11" value="Stream error immediately after decodign started.&lt;br&gt;No data consumed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="255" width="270" height="30" as="geometry" />
         </mxCell>
         <mxCell id="7qr4-UeMCU4mv5dYFZJK-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -59,7 +59,28 @@
           <mxGeometry x="360" y="160" width="110" height="20" as="geometry" />
         </mxCell>
         <mxCell id="7qr4-UeMCU4mv5dYFZJK-15" value="decoding end pos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="359" y="190" width="110" height="20" as="geometry" />
+          <mxGeometry x="360" y="190" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7qr4-UeMCU4mv5dYFZJK-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="340" as="sourcePoint" />
+            <mxPoint x="360" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7qr4-UeMCU4mv5dYFZJK-18" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#FF0000;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="360" as="sourcePoint" />
+            <mxPoint x="360" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7qr4-UeMCU4mv5dYFZJK-19" value="decoding start pos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="310" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7qr4-UeMCU4mv5dYFZJK-20" value="decoding end pos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="340" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7qr4-UeMCU4mv5dYFZJK-21" value="All streams are consumed." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="110" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
