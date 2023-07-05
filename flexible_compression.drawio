@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-05T06:56:18.092Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="xMUEm4LenANZ-F9dJUX0" version="21.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-05T07:30:14.725Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="f53p2uU4I2u7BdDj2NYe" version="21.5.2" type="github">
   <diagram name="CR" id="-hj26rZd8-g5TWYFawQo">
     <mxGraphModel dx="818" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -240,6 +240,15 @@
         </mxCell>
         <mxCell id="bH6gv9mdCXaSQuvATHA7-103" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Flexible RFC - Settings for Different Frame Types&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="560" y="20" width="570" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bH6gv9mdCXaSQuvATHA7-105" value="Recon Buffer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;horizontal=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry y="120" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bH6gv9mdCXaSQuvATHA7-106" value="Input Stream" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;horizontal=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry y="280" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bH6gv9mdCXaSQuvATHA7-107" value="PP Buffer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;horizontal=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry y="440" width="40" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
