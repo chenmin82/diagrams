@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-07-05T03:31:07.545Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="yhuY4ZgMOhFglrnsNlQd" version="21.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-05T03:35:17.039Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="C8UXA1kFuNY_Xd-EVBL5" version="21.5.2" type="github">
   <diagram name="CR" id="-hj26rZd8-g5TWYFawQo">
-    <mxGraphModel dx="818" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="818" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -237,6 +237,9 @@
         </mxCell>
         <mxCell id="bH6gv9mdCXaSQuvATHA7-99" value="Unavailable Data (Slice/Output)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="839" y="680" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bH6gv9mdCXaSQuvATHA7-103" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Flexible RFC - Settings for Different Frame Types&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="20" width="570" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
