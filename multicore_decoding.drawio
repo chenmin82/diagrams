@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-22T10:40:05.527Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="eDOMbouPvPUEwiWfK10N" version="21.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-22T10:42:33.643Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="UaRd5dF9Qhan_TWMVHSt" version="21.6.9" type="github">
   <diagram name="第 1 页" id="eq5pmFyUq67GGeLI4nSZ">
     <mxGraphModel dx="1372" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -31,10 +31,10 @@
             <mxPoint x="320" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uzdxSVSkIq3YJ76U_Gv4-17" value="I have to update the sync status&lt;br&gt;&amp;nbsp;buffer to tell others&lt;br&gt;&amp;nbsp;that I have decoded to&lt;br&gt;row X." style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uzdxSVSkIq3YJ76U_Gv4-17" value="I have to update the sync status&lt;br&gt;&amp;nbsp;buffer to tell others&lt;br&gt;&amp;nbsp;that I have decoded to&lt;br&gt;row X." style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
           <mxGeometry x="160" y="80" width="230" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="uzdxSVSkIq3YJ76U_Gv4-18" value="I need to check whether the&lt;br&gt;&amp;nbsp;reference data from&amp;nbsp;row X &lt;br&gt;of PIC #N is available." style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uzdxSVSkIq3YJ76U_Gv4-18" value="I need to check whether the&lt;br&gt;&amp;nbsp;reference data from&amp;nbsp;row X &lt;br&gt;of PIC #N is available." style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
           <mxGeometry x="502.5" y="80" width="195" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uzdxSVSkIq3YJ76U_Gv4-19" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="uzdxSVSkIq3YJ76U_Gv4-15">
@@ -68,10 +68,10 @@
             <mxPoint x="350" y="660" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uzdxSVSkIq3YJ76U_Gv4-27" value="I have to update the sync status&lt;br&gt;&amp;nbsp;buffer to tell others&amp;nbsp;that&lt;br&gt;I have decoded to&lt;br&gt;CTU Row X of Tile Col 0." style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uzdxSVSkIq3YJ76U_Gv4-27" value="I have to update the sync status&lt;br&gt;&amp;nbsp;buffer to tell others&amp;nbsp;that&lt;br&gt;I have decoded to&lt;br&gt;CTU Row X of Tile Col 0." style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
           <mxGeometry x="210" y="470" width="240" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="uzdxSVSkIq3YJ76U_Gv4-28" value="I need to check whether &lt;br&gt;the decoding of CTU&lt;br&gt;Row X of the left tile column&lt;br&gt;&amp;nbsp;is done." style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uzdxSVSkIq3YJ76U_Gv4-28" value="I need to check whether &lt;br&gt;the decoding of CTU&lt;br&gt;Row X of the left tile column&lt;br&gt;&amp;nbsp;is done." style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
           <mxGeometry x="490" y="470" width="227" height="120" as="geometry" />
         </mxCell>
         <mxCell id="uzdxSVSkIq3YJ76U_Gv4-29" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
