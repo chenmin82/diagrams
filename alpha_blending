@@ -1,9 +1,78 @@
-<mxfile host="app.diagrams.net" modified="2024-01-30T10:49:43.891Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="23.0.2" etag="hFUcfkFlZriwzl4xPH9J" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-30T11:03:15.518Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="eN_EwUbqUjLPPv2HHmiM" version="23.0.2" type="github">
   <diagram name="第 1 页" id="6jp3ImXnb1RsXXvQpsSs">
-    <mxGraphModel>
+    <mxGraphModel dx="818" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="280" y="320" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="130" y="100" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-5" value="Input" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="380" y="150" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-7" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_0uc-91TOgMtg4q-Vkf8-4" target="_0uc-91TOgMtg4q-Vkf8-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="280" as="sourcePoint" />
+            <mxPoint x="290" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-8" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_0uc-91TOgMtg4q-Vkf8-6" target="_0uc-91TOgMtg4q-Vkf8-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="280" as="sourcePoint" />
+            <mxPoint x="240" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-9" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="380" y="390" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-11" value="Backgournd" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="290" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-12" value="Output (Blending)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="50" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-13" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="840" y="80" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-15" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="690" y="100" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-16" value="Input" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-17" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="940" y="150" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-18" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_0uc-91TOgMtg4q-Vkf8-15" target="_0uc-91TOgMtg4q-Vkf8-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="280" as="sourcePoint" />
+            <mxPoint x="850" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-19" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_0uc-91TOgMtg4q-Vkf8-17" target="_0uc-91TOgMtg4q-Vkf8-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="280" as="sourcePoint" />
+            <mxPoint x="800" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_0uc-91TOgMtg4q-Vkf8-20" value="Output (no blending)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="50" width="130" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
