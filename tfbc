@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2024-02-26T03:05:27.537Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="CFPurQMUPsKbgFyzoctZ" version="23.1.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-02-26T03:17:31.578Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="rE0nuGXv99JxEKaVN0xc" version="23.1.6" type="github" pages="2">
   <diagram name="compact_tfbc" id="wMjv4CbE3wMUeryFeDiX">
     <mxGraphModel dx="2541" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ghRUmKT8HQnG_IGtOaHP-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1040" y="121" width="360" height="519" as="geometry" />
+        </mxCell>
         <mxCell id="lt_ULzCUFLAjxdiuoemU-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-450" y="161" width="40" height="40" as="geometry" />
         </mxCell>
@@ -217,10 +220,10 @@
         <mxCell id="lt_ULzCUFLAjxdiuoemU-73" value="CB0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="70" y="161" width="60" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="lt_ULzCUFLAjxdiuoemU-74" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;opacity=50;" parent="1" vertex="1">
+        <mxCell id="lt_ULzCUFLAjxdiuoemU-74" value="CB8-11" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="430" y="161" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="lt_ULzCUFLAjxdiuoemU-75" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;opacity=50;" parent="1" vertex="1">
+        <mxCell id="lt_ULzCUFLAjxdiuoemU-75" value="CU12-15" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="550" y="161" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lt_ULzCUFLAjxdiuoemU-76" value="CB1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;" parent="1" vertex="1">
@@ -312,9 +315,6 @@
         <mxCell id="3148BSpXlpUI_M0NtDSx-5" value="BC (MSB)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="21" y="41" width="60" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="2qhXj0_-rLSASTBVwteM-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="-1040" y="121" width="360" height="360" as="geometry" />
-        </mxCell>
         <mxCell id="2qhXj0_-rLSASTBVwteM-2" value="32x32&lt;br&gt;CU0" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="-1040" y="121" width="80" height="80" as="geometry" />
         </mxCell>
@@ -331,13 +331,13 @@
           <mxGeometry x="-960" y="201" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="2qhXj0_-rLSASTBVwteM-7" value="CU (M-1)*N" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="-1040" y="401" width="80" height="80" as="geometry" />
+          <mxGeometry x="-1040" y="560" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="2qhXj0_-rLSASTBVwteM-8" value="CU (M-1)*N+1" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="-960" y="401" width="80" height="80" as="geometry" />
+          <mxGeometry x="-960" y="560" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="2qhXj0_-rLSASTBVwteM-9" value="CU M*N-1&amp;nbsp;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="-760" y="401" width="80" height="80" as="geometry" />
+          <mxGeometry x="-760" y="560" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="2qhXj0_-rLSASTBVwteM-10" value="..." style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="-880" y="121" width="120" height="80" as="geometry" />
@@ -351,22 +351,13 @@
         <mxCell id="2qhXj0_-rLSASTBVwteM-13" value="CU 2N-1" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="-760" y="201" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="2qhXj0_-rLSASTBVwteM-14" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=5;fillColor=none;strokeColor=#ff0000;" parent="1" vertex="1">
-          <mxGeometry x="-450" y="161" width="320" height="160" as="geometry" />
-        </mxCell>
         <mxCell id="2qhXj0_-rLSASTBVwteM-15" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=5;fillColor=none;strokeColor=#0000FF;" parent="1" vertex="1">
-          <mxGeometry x="-450" y="321" width="320" height="160" as="geometry" />
+          <mxGeometry x="-450" y="160" width="320" height="321" as="geometry" />
         </mxCell>
-        <mxCell id="2qhXj0_-rLSASTBVwteM-16" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="2qhXj0_-rLSASTBVwteM-15" target="lt_ULzCUFLAjxdiuoemU-74" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-370" y="421" as="sourcePoint" />
-            <mxPoint x="-320" y="371" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="2qhXj0_-rLSASTBVwteM-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="2qhXj0_-rLSASTBVwteM-4" target="2qhXj0_-rLSASTBVwteM-14" edge="1">
+        <mxCell id="2qhXj0_-rLSASTBVwteM-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="2qhXj0_-rLSASTBVwteM-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-810" y="161" as="sourcePoint" />
-            <mxPoint x="-760" y="111" as="targetPoint" />
+            <mxPoint x="-450" y="161" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="2qhXj0_-rLSASTBVwteM-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="2qhXj0_-rLSASTBVwteM-4" target="2qhXj0_-rLSASTBVwteM-15" edge="1">
@@ -375,17 +366,14 @@
             <mxPoint x="-450" y="490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="2qhXj0_-rLSASTBVwteM-19" value="&lt;h1&gt;Compressed Data Storage&lt;/h1&gt;&lt;p&gt;Suppose a plane (can be any of Y/U/V plane) has NxM 32x32 CUs.&lt;/p&gt;&lt;p&gt;- Each CU is divided into 16 8x8 CB (CB0 ~ CB15)&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- No separate table (using a 4B header instead), so the&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;size of memory to store a compressed 32x32 CU is 2304B: 32 * 32 * 2B = 2048B, plusing 4B header, aligned to 256B (burst 16).&lt;/span&gt;&lt;/p&gt;- 4B header:&lt;br&gt;&lt;p style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/p&gt;&lt;ul style=&quot;border-color: var(--border-color);&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;The first 2 byte (low address) is the total burst count of compressed data from CU, including 4B header;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;The bit[i] from second 2 bytes (compressed_flag) is the flag indicating whether compressed is performed to ith 8x8 CB in current 32x32 CU&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;- Compression is performed to each 8x8 CB.&lt;/p&gt;&lt;p&gt;- Compressed data from 16 CBs from CU are stored continuously, with total size (including header) aligned to 256B bursts.&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-1080" y="521" width="640" height="289" as="geometry" />
+        <mxCell id="2qhXj0_-rLSASTBVwteM-19" value="&lt;h1&gt;Compressed Data Storage&lt;/h1&gt;&lt;p&gt;Suppose a plane (can be any of Y/U/V plane) has NxM 32x32 CUs.&lt;/p&gt;&lt;p&gt;- Each CU is divided into 16 8x8 CB (CB0 ~ CB15)&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- No separate table (using a 4B header instead), so the&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;size of memory to store a compressed 32x32 CU is 2304B: 32 * 32 * 2B = 2048B, plusing 4-B header, aligned to 256B (burst 16).&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Without TFBC, the buffer size for CU is still 2048 bytes, without 256B overhead.&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;- 4B header:&lt;br&gt;&lt;p style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/p&gt;&lt;ul style=&quot;border-color: var(--border-color);&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;The first 2 byte (low address) is the total burst count of compressed data from CU, including 4B header;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;The bit[i] from second 2 bytes (compressed_flag) is the flag indicating whether compressed is performed to ith 8x8 CB in current 32x32 CU&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;- Compression is performed to each 8x8 CB.&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color);&quot;&gt;- For CU (x, y), the offset to store compressed data from&amp;nbsp;a 32x32 CU is calculated as following:&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/p&gt;&lt;ul style=&quot;border-color: var(--border-color);&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;(y * N + x) * 2304&lt;/li&gt;&lt;/ul&gt;- Missing pixels in boundary CUs (right/bottom) are padded with 0.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;- Compressed data from 16 CBs of CU are stored continuously, with total size (including header) aligned to 128B.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;- For chroma planes (U / V), they are compressed in the same way as luma, respectively. This is different for RFC.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry y="361" width="860" height="439" as="geometry" />
         </mxCell>
         <mxCell id="2qhXj0_-rLSASTBVwteM-21" value="" style="whiteSpace=wrap;html=1;aspect=fixed;opacity=30;strokeWidth=3;" parent="1" vertex="1">
           <mxGeometry x="-220" y="231" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="2qhXj0_-rLSASTBVwteM-22" value="8x8 CB7" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-120" y="266" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="2qhXj0_-rLSASTBVwteM-23" value="&lt;h1&gt;&lt;/h1&gt;&lt;p style=&quot;border-color: var(--border-color);&quot;&gt;For CU (x, y), the offset to store compressed data from&amp;nbsp;a 32x32 CU is calculated as following:&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/p&gt;&lt;ul style=&quot;border-color: var(--border-color);&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&amp;nbsp;(y * N + x) * 2304&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;- For chroma planes (U / V), they are compressed in the same way as luma, respectively. This is different for RFC.&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;- Without TFBC, the buffer size for CU is only 2048 bytes, without 256B overhead.&lt;br&gt;&lt;/span&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-430" y="560" width="710" height="231" as="geometry" />
         </mxCell>
         <mxCell id="2qhXj0_-rLSASTBVwteM-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="81" y="41" width="120" height="39" as="geometry" />
@@ -423,7 +411,7 @@
             <mxPoint x="960" y="201" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RMrnmAurxWBeLDrwupZX-7" value="total buffer size 2304B (2K + 256B) for a 32x32 CU" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="RMrnmAurxWBeLDrwupZX-7" value="total buffer size reserved for a 32x32 CU: 2304B (2K + 256B)&amp;nbsp;" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint y="310" as="sourcePoint" />
             <mxPoint x="960" y="310" as="targetPoint" />
@@ -480,7 +468,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="AIw_Td6q4GVSJY5WoK2h" name="sparse_tfbc">
+  <diagram id="AIw_Td6q4GVSJY5WoK2h" name="separate_table_tfbc">
     <mxGraphModel dx="2541" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
