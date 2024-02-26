@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-26T03:04:40.696Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="RwpCUnh6tbkQkGRUSCL2" version="23.1.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-02-26T03:05:27.537Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="CFPurQMUPsKbgFyzoctZ" version="23.1.6" type="github" pages="2">
   <diagram name="compact_tfbc" id="wMjv4CbE3wMUeryFeDiX">
     <mxGraphModel dx="2541" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -399,7 +399,7 @@
         <mxCell id="2qhXj0_-rLSASTBVwteM-35" value="high address" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="880" y="161" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="2qhXj0_-rLSASTBVwteM-36" value="TFBC (Temporal Frame Buffer Compression)&lt;br&gt;Compact Storage Version" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" parent="1" vertex="1">
+        <mxCell id="2qhXj0_-rLSASTBVwteM-36" value="TFBC (Temporal Frame Buffer Compression)&lt;br&gt;No Separate Table Version" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" parent="1" vertex="1">
           <mxGeometry x="-1120" y="20" width="570" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RMrnmAurxWBeLDrwupZX-1" value="header (4B)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
