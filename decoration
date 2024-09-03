@@ -73,6 +73,15 @@
         <mxCell id="uVdwgsrmdBwo0TfsbWyQ-4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="1550" y="-1430" width="60" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="XxCnaU9VUgZBQBxEUx4b-6" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.pie;startAngle=0.25;endAngle=0.5;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="-1350" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="XxCnaU9VUgZBQBxEUx4b-7" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.pie;startAngle=0.25;endAngle=0.5;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="-1350" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="XxCnaU9VUgZBQBxEUx4b-8" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.pie;startAngle=0.25;endAngle=0.5;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="-1267" width="180" height="180" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
