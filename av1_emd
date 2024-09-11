@@ -54,10 +54,16 @@
         <mxCell id="RIItRlY8qZmaeKVuy48j-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIItRlY8qZmaeKVuy48j-15" target="RIItRlY8qZmaeKVuy48j-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="RIItRlY8qZmaeKVuy48j-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIItRlY8qZmaeKVuy48j-15" target="RIItRlY8qZmaeKVuy48j-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="RIItRlY8qZmaeKVuy48j-15" value="Av1SuperblockLayer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-640" y="150" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="RIItRlY8qZmaeKVuy48j-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIItRlY8qZmaeKVuy48j-17" target="RIItRlY8qZmaeKVuy48j-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RIItRlY8qZmaeKVuy48j-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RIItRlY8qZmaeKVuy48j-17" target="RIItRlY8qZmaeKVuy48j-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RIItRlY8qZmaeKVuy48j-17" value="RunAv1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -77,6 +83,12 @@
         </mxCell>
         <mxCell id="RIItRlY8qZmaeKVuy48j-22" value="read_mv" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1080" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RIItRlY8qZmaeKVuy48j-25" value="copy_tile_probs_ctx_from_ddr" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-640" y="80" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RIItRlY8qZmaeKVuy48j-27" value="copy_tile_probs_ctx_to_ddr" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-440" y="220" width="160" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
