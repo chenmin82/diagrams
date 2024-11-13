@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="24.8.0" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="24.8.4" pages="2">
   <diagram name="平面图" id="wMc0s9Rvaq1udbO5SNjC">
-    <mxGraphModel dx="203" dy="2458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="-351" dy="2178" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,7 +10,7 @@
         <mxCell id="4Pq1jiA8Z6vUMdo4slmU-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1710" y="-1560" width="470" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="4Pq1jiA8Z6vUMdo4slmU-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="4Pq1jiA8Z6vUMdo4slmU-2" value="1900" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1710" y="-1560" width="60" height="190" as="geometry" />
         </mxCell>
         <mxCell id="4Pq1jiA8Z6vUMdo4slmU-3" value="181x205" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -28,7 +28,7 @@
         <mxCell id="2FR3an9sD2Hu1azJe4YJ-2" value="315x60" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1710" y="-1240" width="315" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2FR3an9sD2Hu1azJe4YJ-4" value="155x215" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="2FR3an9sD2Hu1azJe4YJ-4" value="155x215&lt;div&gt;高33cm&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="2025" y="-1240" width="155" height="215" as="geometry" />
         </mxCell>
         <mxCell id="2FR3an9sD2Hu1azJe4YJ-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -172,7 +172,7 @@
         <mxCell id="S8xkPWvEA2tCQ4REIMQC-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="2170" y="-1560" width="10" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="S8xkPWvEA2tCQ4REIMQC-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="S8xkPWvEA2tCQ4REIMQC-3" value="900x260" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="2025" y="-1025" width="95" height="25" as="geometry" />
         </mxCell>
         <mxCell id="S8xkPWvEA2tCQ4REIMQC-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -186,6 +186,12 @@
         </mxCell>
         <mxCell id="lb4fhplt3MqaOloPU3Rs-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1415" y="-1240" width="30" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="825b6bTB9UfIdsN5ESIN-1" value="2600" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1710" y="-1573" as="sourcePoint" />
+            <mxPoint x="1965" y="-1573" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
