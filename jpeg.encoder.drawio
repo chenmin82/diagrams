@@ -16,7 +16,7 @@
         <mxCell id="IlZufm3pC15W0L3yMH54-2" value="sw header" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="120" y="170" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IlZufm3pC15W0L3yMH54-5" value="rem1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="IlZufm3pC15W0L3yMH54-5" value="rem1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="200" y="120" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IlZufm3pC15W0L3yMH54-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="IlZufm3pC15W0L3yMH54-3">
@@ -111,6 +111,24 @@
         </mxCell>
         <mxCell id="IlZufm3pC15W0L3yMH54-27" value="8B alignment" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="70" y="82" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IlZufm3pC15W0L3yMH54-28" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="137" y="213" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IlZufm3pC15W0L3yMH54-29" value="4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="410" y="140" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IlZufm3pC15W0L3yMH54-30" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="92" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IlZufm3pC15W0L3yMH54-31" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="263" y="152" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IlZufm3pC15W0L3yMH54-34" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IlZufm3pC15W0L3yMH54-35" value="① 软件将header中所有完整的8B写入DDR；&lt;div&gt;② 软件将header结尾不足8B的码流写入寄存器rem1和rem2；&lt;/div&gt;&lt;div&gt;③ HW启动后，从rem1和rem2中读入startoffset位剩余header；&lt;/div&gt;&lt;div&gt;④&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;这部分数据和HW编&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;码输出的SOS拼接后写入DDR；&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="157" y="330" width="443" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
