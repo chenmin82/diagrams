@@ -1,35 +1,35 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="26.2.14">
   <diagram name="第 1 页" id="Y7gJz9GEh1_GqajUnPdO">
-    <mxGraphModel dx="810" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1049" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="8f4utCmBXcQ7pYK0fx0Q-1" value="CcsoFilterOffset[3][128][3][3]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="320" width="200" height="80" as="geometry" />
+          <mxGeometry x="120" y="121" width="200" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8f4utCmBXcQ7pYK0fx0Q-2" value="CcsoBlks[Y]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="400" width="200" height="50" as="geometry" />
+          <mxGeometry x="120" y="201" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="8f4utCmBXcQ7pYK0fx0Q-3" value="CcsoBlks[U]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="450" width="200" height="50" as="geometry" />
+          <mxGeometry x="120" y="251" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="8f4utCmBXcQ7pYK0fx0Q-4" value="&lt;div&gt;CcsoBlks[V]&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="500" width="200" height="50" as="geometry" />
+          <mxGeometry x="120" y="301" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="8f4utCmBXcQ7pYK0fx0Q-5" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Input Buffer Details&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; font-size: 0.9em; orphans: 3; widows: 3; grid-column: 2 / auto;&quot; class=&quot;line&quot;&gt;1. CcsoFilterOffset:&lt;br&gt;offset = Ccso_Offset[ read_tu(7) ] * (ccso_scale_idx[plane] + 1)&lt;/span&gt;&lt;span style=&quot;font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; font-size: 0.9em; orphans: 3; widows: 3; grid-column: 1 / auto; color: gray;&quot; data-line=&quot;50&quot; class=&quot;line-no&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; font-size: 0.9em; orphans: 3; widows: 3; grid-column: 2 / auto; background: var(--highlight-hover-bg);&quot; class=&quot;line&quot;&gt;                        CcsoFilterOffset[plane][band][d0][d1] = offset&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;CcsoFilterOffset中实际存放的并不是&lt;span style=&quot;font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; font-size: 10.8px; orphans: 3; widows: 3; background-color: transparent;&quot;&gt;CcsoFilterOffset[][][][]，而是对应的&lt;/span&gt;&lt;span style=&quot;background-color: transparent; font-size: 10.8px; font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; orphans: 3; widows: 3;&quot;&gt;read_tu(7)的值，cmodel内部在使用的时候将该index重新计算成CcsoFiterOffset。read_tu(7)为3bit，为了DDR中存放方便，在DDR中使用4bit。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 3; widows: 3;&quot;&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;buffer大小固定为为：3*128*1*1/2= 192 bytes&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 3; widows: 3;&quot;&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 3; widows: 3;&quot;&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;2. CcsoBlks[Y]/[U]/[V]&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 3; widows: 3;&quot;&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;* 每个plane计算出ccso blks count，每个&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; font-size: 10.8px;&quot;&gt;ccso blks&lt;/span&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;对应一个byte，值为0或者1，每个plane的大小对齐到16B&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 3; widows: 3;&quot;&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;* plane内部按照ccso blks raster scan顺序存放。&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="400" y="309" width="470" height="251" as="geometry" />
+          <mxGeometry x="400" y="120" width="480" height="240" as="geometry" />
         </mxCell>
         <mxCell id="8f4utCmBXcQ7pYK0fx0Q-6" value="CcsoBlks[Y]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="600" width="200" height="50" as="geometry" />
+          <mxGeometry x="120" y="401" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="8f4utCmBXcQ7pYK0fx0Q-7" value="CcsoBlks[U]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="650" width="200" height="50" as="geometry" />
+          <mxGeometry x="120" y="451" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="8f4utCmBXcQ7pYK0fx0Q-8" value="&lt;div&gt;CcsoBlks[V]&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="700" width="200" height="50" as="geometry" />
+          <mxGeometry x="120" y="501" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="8f4utCmBXcQ7pYK0fx0Q-9" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Output Buffer Details&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10.8px; font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; orphans: 3; widows: 3; background-color: transparent;&quot;&gt;1. CcsoBlks[Y]/[U]/[V]&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 3; widows: 3;&quot;&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;* 每个plane计算出ccso blks count，每个&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; font-size: 10.8px;&quot;&gt;ccso blks&lt;/span&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;对应一个byte，值为0或者1，每个plane的大小对齐到16B&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 3; widows: 3;&quot;&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;* plane内部按照ccso blks raster scan顺序存放。&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="400" y="600" width="470" height="150" as="geometry" />
+          <mxGeometry x="400" y="401" width="480" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
