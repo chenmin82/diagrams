@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="26.2.14">
-  <diagram name="第 1 页" id="Y7gJz9GEh1_GqajUnPdO">
-    <mxGraphModel dx="1049" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0" version="26.2.14" pages="2">
+  <diagram name="ccso" id="Y7gJz9GEh1_GqajUnPdO">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8f4utCmBXcQ7pYK0fx0Q-1" value="CcsoFilterOffset[3][128]1][1]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8f4utCmBXcQ7pYK0fx0Q-1" value="CcsoFilterOffset[3][128][1][1]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="121" width="200" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8f4utCmBXcQ7pYK0fx0Q-2" value="CcsoBlks[Y]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -30,6 +30,26 @@
         </mxCell>
         <mxCell id="8f4utCmBXcQ7pYK0fx0Q-9" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Output Buffer Details&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10.8px; font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; orphans: 3; widows: 3; background-color: transparent;&quot;&gt;1. CcsoBlks[Y]/[U]/[V]&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 3; widows: 3;&quot;&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;* 每个plane计算出ccso blks count，每个&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; font-size: 10.8px;&quot;&gt;ccso blks&lt;/span&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;对应一个byte，值为0或者1，每个plane的大小对齐到16B&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 3; widows: 3;&quot;&gt;&lt;font face=&quot;Menlo, Consolas, DejaVu Sans Mono, Monaco, monospace&quot;&gt;&lt;span style=&quot;font-size: 10.8px;&quot;&gt;* plane内部按照ccso blks raster scan顺序存放。&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="400" y="401" width="480" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="qadqK9_dTpC68vnC9WPO" name="lr">
+    <mxGraphModel dx="802" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="COz2U9nZzWvTIauCmszm-1" value="&lt;span style=&quot;color: rgb(0, 119, 170); font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; font-size: 14.4px; orphans: 3; text-align: start; widows: 3; white-space: pre; background-color: rgba(0, 0, 0, 0.05);&quot;&gt;FrameLrWienerNs[7][3][16][18]&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="COz2U9nZzWvTIauCmszm-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Wienerns Input Buffer&lt;/h1&gt;&lt;p&gt;* FrameLrWienerNs 来自7个参考帧，总大小为：7*3*16*18 = 6048B&lt;/p&gt;&lt;p&gt;* 其他信息，如&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: sans-serif; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;RefFrameFiltersO&lt;font&gt;n&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;font&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: sans-serif; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[7],&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: sans-serif; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;RefNumFilterClasses&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: sans-serif; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[7]通过寄存器传递&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="450" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="COz2U9nZzWvTIauCmszm-3" value="&lt;span style=&quot;color: rgb(0, 119, 170); font-family: Menlo, Consolas, &amp;quot;DejaVu Sans Mono&amp;quot;, Monaco, monospace; font-size: 14.4px; orphans: 3; text-align: start; widows: 3; white-space: pre; background-color: rgba(0, 0, 0, 0.05);&quot;&gt;FrameLrWienerNs[3][16][18]&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="240" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="COz2U9nZzWvTIauCmszm-4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Wienerns Output Buffer&lt;/h1&gt;&lt;p&gt;* 当前帧解析出的FrameLrWienerNs，大小为：3*16*18 = 864 B&lt;/p&gt;&lt;p&gt;* 基于tile 列multicore解码时，这个buffer由第一个tile解码生成，并同步给其他的tile 列解码。&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="240" width="450" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
