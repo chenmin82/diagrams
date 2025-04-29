@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="K5RM64whLRTMzfyzTZwe-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="160" width="320" height="470" as="geometry" />
+          <mxGeometry x="160" y="160" width="320" height="470" as="geometry" />
         </mxCell>
         <mxCell id="K5RM64whLRTMzfyzTZwe-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="160" y="220" width="80" height="80" as="geometry" />
@@ -30,20 +30,20 @@
         </mxCell>
         <mxCell id="K5RM64whLRTMzfyzTZwe-15" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="50" y="220" as="sourcePoint" />
-            <mxPoint x="120" y="220" as="targetPoint" />
+            <mxPoint x="89" y="220" as="sourcePoint" />
+            <mxPoint x="159" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="K5RM64whLRTMzfyzTZwe-16" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="50" y="380" as="sourcePoint" />
-            <mxPoint x="120" y="380" as="targetPoint" />
+            <mxPoint x="89" y="380" as="sourcePoint" />
+            <mxPoint x="159" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="K5RM64whLRTMzfyzTZwe-17" value="gap" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="80" y="380" as="sourcePoint" />
-            <mxPoint x="80" y="220" as="targetPoint" />
+            <mxPoint x="119" y="380" as="sourcePoint" />
+            <mxPoint x="119" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="K5RM64whLRTMzfyzTZwe-19" value="mvy_max" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
