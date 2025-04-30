@@ -112,8 +112,8 @@
         <mxCell id="K5RM64whLRTMzfyzTZwe-43" value="cu_y" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="383" y="399" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="K5RM64whLRTMzfyzTZwe-44" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;更合理的条件：对任意PU，&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;gap+cu_y &amp;gt; ctb_size + mv + 4&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="560" y="280" width="340" height="80" as="geometry" />
+        <mxCell id="K5RM64whLRTMzfyzTZwe-44" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;考虑到CTB中每个PU的MV可能不同，不同位置的PU对MV的容忍度不同&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;更合理的条件：对任意PU，&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;gap+cu_y &amp;gt; ctb_size + mv + 4&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="240" width="450" height="170" as="geometry" />
         </mxCell>
         <mxCell id="K5RM64whLRTMzfyzTZwe-45" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="1">
           <mxGeometry x="560" y="440" width="30" height="30" as="geometry" />
