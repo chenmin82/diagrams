@@ -235,7 +235,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="C9M0DZIEUYUlnows9Piv" name="global_intrabc">
-    <mxGraphModel dx="802" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1041" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -269,8 +269,8 @@
             <mxPoint x="230" y="239.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="foLAocGwM6MWi2cE2cSu-9" value="Q2: global intrabc with filters enabled (F-008)&lt;div&gt;在此之前，global intrabc enable时，所有inloop filters都会被disable，而该提案允许global intrabc和filter同时enable。在这种场景下，Decode写入到decoder recon output buffer都是filter之后的，但是IntraBC使用的数据是unfiltered pixels.所以不能直接从Filtered Recon Buffer直接读Global IntraBC的数据。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;解决方案：解码同时从IntraPred直接输出一个unfiltered buffer，用于存放未filter的数据，这个buffer的数据没有offset。&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;global intrabc直接从这个buffer中读数据。&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="600" y="320" width="360" height="200" as="geometry" />
+        <mxCell id="foLAocGwM6MWi2cE2cSu-9" value="Q2: global intrabc with filters enabled (F-008)&lt;div&gt;在此之前，global intrabc enable时，所有inloop filters都会被disable，而该提案允许global intrabc和filter同时enable。在这种场景下，Decode写入到decoder recon output buffer都是filter之后的，但是IntraBC使用的数据是unfiltered pixels.所以不能直接从Filtered Recon Buffer直接读Global IntraBC的数据。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;解决方案：&lt;/div&gt;&lt;div&gt;1. 解码同时从IntraPred直接输出一个unfiltered buffer，用于存放未filter的数据，这个buffer的数据没有offset。&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;global intrabc直接从这个buffer中读数据。(增加一组unfiltered buffer地址寄存器）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. unfiltered buffer can be compressed.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. When inloop filters are disabled, unfiltered/filered buffer can be combined into one buffer. The steps for in-loop filters are bypassed (not working at all).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;本方案可以同时解决Q1.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="320" width="360" height="320" as="geometry" />
         </mxCell>
         <mxCell id="foLAocGwM6MWi2cE2cSu-10" value="IntraPred" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="360" width="80" height="160" as="geometry" />
