@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0" version="26.3.0" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0" version="28.1.1" pages="3">
   <diagram name="第 1 页" id="MW9S9ODkhFWCF9bkyggu">
     <mxGraphModel dx="810" dy="517" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -230,6 +230,119 @@
         </mxCell>
         <mxCell id="rNm4amvzASoifTfwpmoE-51" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="320" y="600" width="80" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="C9M0DZIEUYUlnows9Piv" name="global_intrabc">
+    <mxGraphModel dx="802" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="foLAocGwM6MWi2cE2cSu-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="40" width="440" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-2" value="current" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="410" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-3" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillStyle=solid;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="190" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="120" y="260" width="270" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-4" value="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="foLAocGwM6MWi2cE2cSu-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="239.5" as="sourcePoint" />
+            <mxPoint x="230" y="239.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-6" value="Q1: global intrabc with filters disabled&lt;div&gt;由于filter输出内部有偏移，导致和当前解码sb同一行底部有部分参考帧数据不可用。这个问题感觉AV1也存在，不知道AV1是通过对global intrabc的bv做了限制避免了这个问题呢，还是我们在实现的时候做了特殊设计解决这个问题？或者这里还存在一个bug？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;解决方案：如果对于filters disable时各个filter 模块不暂存任何数据，那么可避免这个问题。&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="360" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-7" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillStyle=solid;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="290" y="70" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-8" value="2" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="foLAocGwM6MWi2cE2cSu-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="240" as="sourcePoint" />
+            <mxPoint x="230" y="239.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-9" value="Q2: global intrabc with filters enabled (F-008)&lt;div&gt;在此之前，global intrabc enable时，所有inloop filters都会被disable，而该提案允许global intrabc和filter同时enable。在这种场景下，Decode写入到decoder recon output buffer都是filter之后的，但是IntraBC使用的数据是unfiltered pixels.所以不能直接从Filtered Recon Buffer直接读Global IntraBC的数据。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;解决方案：解码同时从IntraPred直接输出一个unfiltered buffer，用于存放未filter的数据，这个buffer的数据没有offset。&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;global intrabc直接从这个buffer中读数据。&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="320" width="360" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-10" value="IntraPred" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="80" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-11" value="Filters" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-12" value="1. Unfiltered Buffer&lt;div&gt;(no offset)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="400" y="350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-13" value="2. Filtered Recon Buffer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="440" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="foLAocGwM6MWi2cE2cSu-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="480" as="sourcePoint" />
+            <mxPoint x="250" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="480" as="sourcePoint" />
+            <mxPoint x="400" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-16" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" target="foLAocGwM6MWi2cE2cSu-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="390" as="sourcePoint" />
+            <mxPoint x="260" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-17" value="IntraPred" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="600" width="80" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-18" value="Filters" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="260" y="680" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-19" value="1. Unfiltered Buffer&lt;div&gt;(no offset)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="400" y="590" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-20" value="2. Filtered Recon Buffer" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="400" y="680" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-21" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" edge="1" parent="1" target="foLAocGwM6MWi2cE2cSu-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="720" as="sourcePoint" />
+            <mxPoint x="250" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-22" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="720" as="sourcePoint" />
+            <mxPoint x="400" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-23" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" target="foLAocGwM6MWi2cE2cSu-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="630" as="sourcePoint" />
+            <mxPoint x="260" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-24" value="Fig 1 Global intraBC with filters enabled" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="530" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-25" value="Fig 2 Global intraBC with filters disabled" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="770" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-28" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="520" y="630" width="20" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="foLAocGwM6MWi2cE2cSu-29" value="same buffer" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="660" width="70" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
