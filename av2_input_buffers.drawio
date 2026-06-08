@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9" pages="5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" pages="5">
   <diagram name="ccso" id="Y7gJz9GEh1_GqajUnPdO">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -106,7 +106,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="XX43IpvAn224HhDzIxho" name="tile">
-    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1030" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -131,7 +131,7 @@
         <mxCell id="3fdjjAqH7fb_qDT2vRox-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="0" vertex="1">
           <mxGeometry height="40" width="80" x="240" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="3fdjjAqH7fb_qDT2vRox-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="0" vertex="1">
+        <mxCell id="3fdjjAqH7fb_qDT2vRox-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="tile_index" vertex="1">
           <mxGeometry height="40" width="80" x="320" y="160" as="geometry" />
         </mxCell>
         <mxCell id="3fdjjAqH7fb_qDT2vRox-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="tile_start_offset" vertex="1">
@@ -145,6 +145,9 @@
         </mxCell>
         <mxCell id="3fdjjAqH7fb_qDT2vRox-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Base+3" vertex="1">
           <mxGeometry height="30" width="60" x="340" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ak_ME1C4QI27fA7wHuC9-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;rounded=0;" value="tile_index is only valid when multicore decoding is used. Otherwise it&#39;s set to 0." vertex="1">
+          <mxGeometry height="40" width="260" x="480" y="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
